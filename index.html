@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+.z {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #18366b,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem wheat, 0 0 1.5rem brown,
+    -0.2rem 0.1rem 1rem sienna, 0.2rem 0.1rem 1rem burlywood,
+    0 -0.5rem 2rem silver, 0 0.5rem 3rem sandybrown;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: wheat;
+    text-shadow: 0 0 0.6rem brown, 0 0 1.5rem burlywood,
+      -0.2rem 0.1rem 1rem gold, 0.2rem 0.1rem 1rem wheat,
+      0 -0.5rem 2rem wheat, 0 0.5rem 3rem saddlebrown;
+  }
+  28%,
+  33% {
+    color: sienna;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: sandybrown;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker, .fast-flicker1 {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: burlywood;
+    text-shadow: none;
+  }
+  100% {
+    color: brown;
+    text-shadow: 0 0 0.6rem salmon, 0 0 1.5rem sandybrown,
+      -0.2rem 0.1rem 1rem burlywood, 0.2rem 0.1rem 1rem sienna,
+      0 -0.5rem 2rem wheat, 0 0.5rem 3rem brown;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+     .row::after{
+       content: "";
+       clear: both;
+       display: table;
+    }
+    .a, .b, .c, .d, .e {
+      color: orangered;
+    }
+    .imgggg {
+        float: left;
+        width: 19%;
+        padding: 4px;
+    }
+  .quotation{
+   font-size: x-large;
+   color: burlywood;
+   position: static;
+   text-align: center;
+   font-weight: bold;
+   font-style: italic;
+   margin-top: 5%;
+   animation: quo 10s ease-in-out 3s 5  forwards;
+    }
+    @keyframes quo {
+    0%{
+      color: wheat;
+      opacity: 0.5;
+
+    }
+    50%{
+    color: sienna;
+     opacity: 0.5;
+    }
+    100%{
+    color:wheat;
+     opacity: 0.5;
+    }
+  }
+    .two {
+      position: relative;
+      animation: animation 2s ease;
+    }
+
+.two {
+      text-align: center;
+      color: #fff;
+    }
+
+@keyframes animation {
+      0% {
+        opacity: 0;
+        left: -700px;
+      }
+
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
+    .foot-container {
+  animation: 10s anim-popoutin ease ;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.393);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.foot-container {
+  animation: 20s anim-fromtop linear;
+}
+@keyframes anim-fromtop {
+  0% { opacity: 0; transform: translateY(-100%);}
+  25% { opacity: 1; transform: translateY(0%);}
+  50% {
+  }
+  100% {
+  }
+}
+
+    .anim3 {
+      font-size: 17px;
+    }
+    .five, .three, .ten {
+      
+  animation: 10s anim-flipX ease;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+    
+    .foor, .uno, .due, .tre, .quattro {
+      font-weight: bold;
+       text-decoration:  underline;
+    }
+    .anim, .div3, .anim3 {
+  animation: 3s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+    .brown, .brownn, .browny{
+      color:red
+    }
+    h2 {
+      color: aqua;
+    }
+    .footer-1, .footer-2 {
+      font-size:larger;
+      color:red
+    }
+  body {
+  color: red;
+  background-color: black;
+  }
+  .one {
+    font-family: monospace;
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color:  transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: center inline-block;
+      font-size: 80px;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+
+  }
+  .two {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: cyan;
+  }
+  .three, .five, .ten{
+    color: burlywood;
+  }
+  .foor, .uno, .due, .tre, .quattro {
+    font-size: x-large;
+  }
+  
+  .img {
+     position: relative;
+     width: auto;
+     height: 5cm;
+    }
+    .imgg {
+      position:absolute;
+      left: 30%;
+      height: 6cm;
+      width: auto;
+    }
+  
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <meta content="width=device-width,initial-scale=1.0">
+    <title>What is Stress? Symptoms, Causes and Treatment</title>
+</head>
+<div1 class="div1">
+<body class="body">
+  <h1 class="one">What is Stress?</h1>
+
+  <p class="two">
+      Stress in humans results from interactions between persons and their environment that are perceived as straining or exceeding their adaptive capacities and threatening their well-being.
+      The element of perception indicates that human stress responses reflect differences in personality, as well as differences in physical strength or general health.
+    </div1>
+<div><i class='fas fa-play' style='font-size:48px;color:red'></i></div>
+  <div2 class="div2">
+      <h1 class="three">
+Cause of stress
+      </h1>
+      <div class="anim">
+
+<table>
+<tr>
+  <td><img class="img" src=https://media2.giphy.com/media/xUA7aYCL4juS3IhY2Y/200w.webp?cid=ecf05e47g09e43xt95slshdoamppqtvxjbwdvxnsran1gy31&rid=200w.webp&ct=g">
+  </td>
+<td>
+        <p class="foor">
+            There are many causes of stress such as: </p>
+            <ul>
+              <li>Losing your job</li>
+              <li>Long-term unemployment</li>
+              <li>Loosing one of your family</li>
+              <li>Illness or injury</li>
+              <li>Pregnancy and becoming a parent</li>
+            </ul></td>
+            
+          </tr>
+        </table>
+      <div1 class="z">
+
+        <p class="quotation" >
+          <q>
+            <span class="fast-flicker">
+            Much of the stress that<br>
+            people feel</span> doesn’t come <br>
+            from having<span class="flicker">too much to do.<br>
+            It comes from not finishing <br>
+            what </span> they’ve started.</q><br>
+            
+          
+            <span class="fast-flicker1">―David Al</span>len
+          </p>
+        </div1>
+        </div>
+        </div2>
+        <div3 class="div3">
+<h1 class="five">
+  Stress side effects </h1>
+  <table> <tr><td rowspan="2">
+      <img class="imggg" src="http://www.rochester.edu/newscenter/wp-content/uploads/2014/04/gamer2.jpg" width="500" height="300"></td>
+      <td><div class="anim">
+        </div> <p class="uno">
+      1- Body effect:</p><ul>
+        <li>
+         Headaches</li>
+        <li>Fatigue</li> 
+       <li>Skin irritation</li> </ul></td>
+      <td>
+<p class="due">2- Mind:</p>
+
+          <ul>
+        <li>Worrying</li>
+        <li>Indecision</li>
+        <li>Negativity</li>
+      </ul>
+    </td> 
+    </tr>
+    <tr><td>
+<p class="tre">3- Emotions:</p>
+<ul>
+  <li>Loss of confidence</li>
+  <li>Depression</li>
+  <li>Carelessness</li>
+
+</ul></td>
+
+<td>
+<p class="quattro">
+  4- Behaviour:
+</p>
+<ul>
+ <li>Loss of appetite</li>
+ <li>Insomnia</li>
+ <li>Smoking more</li>
+</ul></td>
+</div>
+</tr>
+</table>
+</div3>
+
+<div4 class="div4">
+<h1 class="ten">Treatment</h1>
+
+<div class="anim3">
+  <div class="row">
+    <div class="imgggg">
+<figcaption> 
+<img  src="https://www.heart.org/-/media/Images/News/2018/October-2018/1025OfficeFood_SC.jpg" alt="healthy diet" width="100% " height="135"><a class="e"href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eight-tips-for-healthy-eating/" target="_blank">
+Eat a healthy diet</a>
+</figcaption>
+    </div>
+
+    <div class="imgggg">
+
+        <figcaption>
+            <img src="https://www.wikihow.com/images/thumb/c/cc/Connect-With-People-Step-8.jpg/v4-460px-Connect-With-People-Step-8.jpg.webp" width="100% " height="135"><a class="d" href="https://www.betterup.com/blog/how-to-connect-with-people" target="_blank">
+         Connect with others </a>
+        </figcaption>
+    </div>
+    <div class="imgggg">
+
+        <figcaption>
+            <img src="data:image/jpeg;base64,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" width="100% " height="135">
+        <a class="c"href="https://bestlifeonline.com/be-more-assertive/" target="_blank">
+            Assert yourself </a>
+        </figcaption>
+    </div>
+    <div class="imgggg">
+        <figcaption>
+            <img src="data:image/jpeg;base64,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" width="100% " height="135">
+        <a class="b"href="https://newsinhealth.nih.gov/2021/04/good-sleep-good-health#:~:text=But%20sleep%20is%20as%20important,stroke%20to%20obesity%20and%20dementia." target="_blank">
+            Enough sleep </a></figcaption>
+        </figcaption>
+    </div>
+
+    <div class="imgggg">
+
+        <figcaption>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96yBSG-Hf81s3Ta_RKQhEppiKRh_FyK70Zg&usqp=CAU" width="100% " height="135" alt="Friends singing">
+        <a class="a"href="https://www.medicalnewstoday.com/articles/music-therapy#:~:text=Although%20music%20therapy%20is%20not%20a%20cure%20for%20any%20mental,feelings%20and%20processing%20their%20experiences." target="_blank">
+            Get musical and be creative </a>
+        </figcaption>
+    </div>
+</div>
+</div>
+</div4>
+<div class="foot-container">
+  <div class="footer">
+    <div class="footer-2">
+      <h2>Social Media</h2>
+      <a class="browny" href="https://github.com/MahmoudKalekish" target="_blank">GitHub</a>
+      <a class="brown" href="https://instagram.com/mahmoud_kalekish?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+
+</html>
+
